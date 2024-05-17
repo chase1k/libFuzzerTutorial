@@ -1,0 +1,9 @@
+INFO: Seed: 908894409
+INFO: Loaded 1 modules   (10304 inline 8-bit counters): 10304 [0x6dbcb0, 0x6de4f0), 
+INFO: Loaded 1 PC tables (10304 PCs): 10304 [0x6710b8,0x6994b8), 
+INFO:    66826 files found in CORPUS
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: seed corpus: files: 66826 min: 1b max: 1270b total: 7232736b rss: 60Mb
+#2048	pulse  cov: 1506 ft: 2690 corp: 631/2552b exec/s: 341 rss: 103Mb
+#4096	pulse  cov: 2049 ft: 4391 corp: 1198/6412b exec/s: 151 rss: 160Mb
+==82911== libFuzzer: run interrupted; exiting

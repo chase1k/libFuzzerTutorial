@@ -1,0 +1,237 @@
+INFO: Seed: 1916718406
+INFO: Loaded 1 modules   (11232 inline 8-bit counters): 11232 [0x799070, 0x79bc50), 
+INFO: Loaded 1 PC tables (11232 PCs): 11232 [0x7279b0,0x7537b0), 
+INFO:        0 files found in NEW_CORPUS
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 4096 bytes
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 15 ft: 16 corp: 1/1b exec/s: 0 rss: 28Mb
+#3	NEW    cov: 16 ft: 17 corp: 2/5b lim: 4 exec/s: 0 rss: 28Mb L: 4/4 MS: 1 CrossOver-
+#710	NEW    cov: 17 ft: 18 corp: 3/9b lim: 8 exec/s: 0 rss: 29Mb L: 4/4 MS: 2 ChangeByte-CMP- DE: "wOF2"-
+#796	NEW    cov: 18 ft: 19 corp: 4/17b lim: 8 exec/s: 0 rss: 29Mb L: 8/8 MS: 1 PersAutoDict- DE: "wOF2"-
+#1408	NEW    cov: 19 ft: 20 corp: 5/31b lim: 14 exec/s: 0 rss: 29Mb L: 14/14 MS: 2 InsertByte-InsertRepeatedBytes-
+#1732	REDUCE cov: 19 ft: 20 corp: 5/30b lim: 17 exec/s: 0 rss: 29Mb L: 13/13 MS: 4 ShuffleBytes-ChangeASCIIInt-EraseBytes-PersAutoDict- DE: "wOF2"-
+#2664	REDUCE cov: 19 ft: 20 corp: 5/29b lim: 25 exec/s: 0 rss: 29Mb L: 12/12 MS: 2 InsertByte-EraseBytes-
+#5426	REDUCE cov: 20 ft: 21 corp: 6/41b lim: 48 exec/s: 0 rss: 29Mb L: 12/12 MS: 2 ChangeBinInt-ChangeBinInt-
+#26519	NEW    cov: 21 ft: 22 corp: 7/57b lim: 254 exec/s: 0 rss: 31Mb L: 16/16 MS: 3 ChangeASCIIInt-CMP-ChangeBinInt- DE: "\x04\x00\x00\x00\x00\x00\x00\x00"-
+#26710	NEW    cov: 22 ft: 23 corp: 8/73b lim: 254 exec/s: 0 rss: 31Mb L: 16/16 MS: 1 ChangeBinInt-
+#40967	NEW    cov: 23 ft: 24 corp: 9/93b lim: 389 exec/s: 0 rss: 33Mb L: 20/20 MS: 2 CMP-ChangeBinInt- DE: "5FO?"-
+#61979	NEW    cov: 24 ft: 25 corp: 10/121b lim: 589 exec/s: 0 rss: 37Mb L: 28/28 MS: 2 CrossOver-ChangeBinInt-
+#62058	NEW    cov: 25 ft: 26 corp: 11/145b lim: 589 exec/s: 0 rss: 37Mb L: 24/28 MS: 4 CMP-ChangeBinInt-ChangeBinInt-CopyPart- DE: "\x01\x00\x00\x00\x00\x00\x00\x04"-
+	NEW_FUNC[1/2]: 0x64fcd0 in woff2::ReadBase128(woff2::Buffer*, unsigned int*) /home/chase/Documents/Projects/woff/SRC/src/variable_length.cc:94
+	NEW_FUNC[2/2]: 0x65f9a0 in std::vector<woff2::Table, std::allocator<woff2::Table> >::_M_default_append(unsigned long) /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/vector.tcc:636
+#64182	RELOAD cov: 67 ft: 115 corp: 38/2405b lim: 607 exec/s: 64182 rss: 49Mb
+#64388	NEW    cov: 68 ft: 116 corp: 39/2505b lim: 607 exec/s: 64388 rss: 51Mb L: 100/108 MS: 1 CopyPart-
+#65009	NEW    cov: 68 ft: 117 corp: 40/2605b lim: 607 exec/s: 65009 rss: 60Mb L: 100/108 MS: 1 ChangeBinInt-
+#65665	NEW    cov: 68 ft: 118 corp: 41/2705b lim: 607 exec/s: 65665 rss: 71Mb L: 100/108 MS: 1 ChangeBinInt-
+#68958	NEW    cov: 68 ft: 119 corp: 42/2805b lim: 634 exec/s: 68958 rss: 196Mb L: 100/108 MS: 3 ChangeBinInt-ChangeByte-ChangeByte-
+#69251	NEW    cov: 69 ft: 120 corp: 43/2905b lim: 634 exec/s: 69251 rss: 197Mb L: 100/108 MS: 3 ChangeByte-ShuffleBytes-CMP- DE: "@\x00\x00\x00\x00\x00\x00\x00"-
+#70342	NEW    cov: 69 ft: 121 corp: 44/3005b lim: 643 exec/s: 70342 rss: 215Mb L: 100/108 MS: 1 ChangeBit-
+#71045	NEW    cov: 69 ft: 123 corp: 45/3105b lim: 643 exec/s: 71045 rss: 246Mb L: 100/108 MS: 3 ShuffleBytes-ShuffleBytes-CopyPart-
+#71801	NEW    cov: 69 ft: 124 corp: 46/3205b lim: 643 exec/s: 71801 rss: 258Mb L: 100/108 MS: 1 ChangeBinInt-
+#72907	NEW    cov: 70 ft: 125 corp: 47/3305b lim: 652 exec/s: 72907 rss: 304Mb L: 100/108 MS: 1 ShuffleBytes-
+#74074	RELOAD cov: 79 ft: 142 corp: 62/4813b lim: 661 exec/s: 37037 rss: 337Mb
+#82078	RELOAD cov: 79 ft: 143 corp: 63/4913b lim: 742 exec/s: 27359 rss: 350Mb
+#88402	RELOAD cov: 79 ft: 152 corp: 66/5281b lim: 805 exec/s: 22100 rss: 352Mb
+#95579	RELOAD cov: 83 ft: 160 corp: 70/5681b lim: 877 exec/s: 19115 rss: 352Mb
+#102210	NEW    cov: 83 ft: 161 corp: 71/5781b lim: 940 exec/s: 17035 rss: 352Mb L: 100/168 MS: 1 ChangeByte-
+#102380	RELOAD cov: 88 ft: 166 corp: 73/5981b lim: 940 exec/s: 17063 rss: 352Mb
+#111961	RELOAD cov: 88 ft: 167 corp: 74/6081b lim: 1030 exec/s: 15994 rss: 352Mb
+#119644	RELOAD cov: 89 ft: 169 corp: 76/6281b lim: 1110 exec/s: 14955 rss: 352Mb
+#123372	NEW    cov: 89 ft: 171 corp: 77/6449b lim: 1150 exec/s: 15421 rss: 352Mb L: 168/168 MS: 3 ChangeBinInt-CopyPart-CopyPart-
+#124429	NEW    cov: 89 ft: 173 corp: 78/6617b lim: 1160 exec/s: 13825 rss: 352Mb L: 168/168 MS: 2 ChangeByte-CopyPart-
+#131072	pulse  cov: 89 ft: 173 corp: 78/6617b lim: 1220 exec/s: 14563 rss: 352Mb
+#132683	NEW    cov: 90 ft: 174 corp: 79/6717b lim: 1240 exec/s: 14742 rss: 352Mb L: 100/168 MS: 3 ChangeBit-ChangeBinInt-PersAutoDict- DE: "\x01\x00\x00\x00\x00\x00\x00\x04"-
+#136004	RELOAD cov: 90 ft: 175 corp: 80/6898b lim: 1270 exec/s: 13600 rss: 352Mb
+#137440	NEW    cov: 90 ft: 176 corp: 81/7079b lim: 1280 exec/s: 13744 rss: 352Mb L: 181/181 MS: 1 CopyPart-
+#158829	NEW    cov: 90 ft: 177 corp: 82/7179b lim: 1490 exec/s: 12217 rss: 352Mb L: 100/181 MS: 2 ChangeBinInt-CopyPart-
+#175035	RELOAD cov: 90 ft: 184 corp: 86/7822b lim: 1650 exec/s: 11669 rss: 352Mb
+#198125	RELOAD cov: 90 ft: 185 corp: 87/7922b lim: 1880 exec/s: 11006 rss: 352Mb
+#208356	RELOAD cov: 90 ft: 186 corp: 88/8022b lim: 1980 exec/s: 10966 rss: 352Mb
+#214087	NEW    cov: 90 ft: 187 corp: 89/8122b lim: 2030 exec/s: 10704 rss: 353Mb L: 100/181 MS: 1 CopyPart-
+#223403	RELOAD cov: 91 ft: 188 corp: 90/8222b lim: 2116 exec/s: 10638 rss: 356Mb
+#239114	RELOAD cov: 91 ft: 189 corp: 91/8390b lim: 2270 exec/s: 10396 rss: 356Mb
+#259310	RELOAD cov: 92 ft: 190 corp: 92/8490b lim: 2479 exec/s: 10372 rss: 356Mb
+#262144	pulse  cov: 92 ft: 190 corp: 92/8490b lim: 2501 exec/s: 10485 rss: 356Mb
+#313526	RELOAD cov: 92 ft: 193 corp: 93/8738b lim: 3018 exec/s: 10113 rss: 356Mb
+	NEW_FUNC[1/16]: 0x581dc0 in BrotliInitBitReader /home/chase/Documents/Projects/woff/BROTLI/dec/bit_reader.c:18
+	NEW_FUNC[2/16]: 0x581e20 in BrotliWarmupBitReader /home/chase/Documents/Projects/woff/BROTLI/dec/bit_reader.c:23
+#421774	RELOAD cov: 174 ft: 286 corp: 97/9138b lim: 4096 exec/s: 9585 rss: 357Mb
+#422690	NEW    cov: 174 ft: 287 corp: 98/9238b lim: 4096 exec/s: 9606 rss: 357Mb L: 100/248 MS: 1 ChangeByte-
+#425202	NEW    cov: 175 ft: 288 corp: 99/9338b lim: 4096 exec/s: 9448 rss: 357Mb L: 100/248 MS: 2 ShuffleBytes-ChangeBit-
+#430403	NEW    cov: 175 ft: 295 corp: 100/9438b lim: 4096 exec/s: 9564 rss: 357Mb L: 100/248 MS: 1 ShuffleBytes-
+	NEW_FUNC[1/3]: 0x5c95a0 in DecodeMetaBlockLength(BrotliStateStruct*, BrotliBitReader*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:166
+	NEW_FUNC[2/3]: 0x6359a0 in DefaultAllocFunc(void*, unsigned long) /home/chase/Documents/Projects/woff/BROTLI/dec/state.c:22
+#438032	RELOAD cov: 193 ft: 314 corp: 102/9638b lim: 4096 exec/s: 9522 rss: 357Mb
+#456226	RELOAD cov: 193 ft: 316 corp: 103/9738b lim: 4096 exec/s: 9504 rss: 357Mb
+#459307	NEW    cov: 194 ft: 317 corp: 104/9838b lim: 4096 exec/s: 9373 rss: 357Mb L: 100/248 MS: 1 ChangeBinInt-
+	NEW_FUNC[1/5]: 0x5d1200 in BrotliCalculateRingBufferSize(BrotliStateStruct*, BrotliBitReader*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:1267
+	NEW_FUNC[2/5]: 0x5d20f0 in DecodeVarLenUint8(BrotliStateStruct*, BrotliBitReader*, unsigned int*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:123
+#464558	RELOAD cov: 260 ft: 391 corp: 108/10238b lim: 4096 exec/s: 9480 rss: 357Mb
+#464835	NEW    cov: 260 ft: 393 corp: 109/10338b lim: 4096 exec/s: 9486 rss: 357Mb L: 100/248 MS: 2 ChangeBit-ChangeBinInt-
+#465086	NEW    cov: 263 ft: 396 corp: 110/10438b lim: 4096 exec/s: 9491 rss: 357Mb L: 100/248 MS: 1 ChangeByte-
+#466473	NEW    cov: 263 ft: 397 corp: 111/10538b lim: 4096 exec/s: 9519 rss: 357Mb L: 100/248 MS: 2 ChangeBinInt-ChangeBinInt-
+	NEW_FUNC[1/2]: 0x5d16b0 in CopyUncompressedBlockToOutput(unsigned long*, unsigned char**, unsigned long*, BrotliStateStruct*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:1186
+	NEW_FUNC[2/2]: 0x5d8cc0 in BrotliAllocateRingBuffer(BrotliStateStruct*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:1160
+#468390	NEW    cov: 280 ft: 420 corp: 112/10638b lim: 4096 exec/s: 9367 rss: 357Mb L: 100/248 MS: 2 CopyPart-PersAutoDict- DE: "wOF2"-
+	NEW_FUNC[1/1]: 0x635bd0 in BrotliStateCleanupAfterMetablock /home/chase/Documents/Projects/woff/BROTLI/dec/state.c:135
+#469476	NEW    cov: 287 ft: 427 corp: 113/10738b lim: 4096 exec/s: 9389 rss: 357Mb L: 100/248 MS: 1 CMP- DE: "oamc"-
+	NEW_FUNC[1/2]: 0x6145f0 in BrotliBuildHuffmanTable /home/chase/Documents/Projects/woff/BROTLI/dec/huffman.c:172
+	NEW_FUNC[2/2]: 0x636640 in BrotliHuffmanTreeGroupInit /home/chase/Documents/Projects/woff/BROTLI/dec/state.c:162
+#469872	NEW    cov: 311 ft: 460 corp: 114/10838b lim: 4096 exec/s: 9397 rss: 357Mb L: 100/248 MS: 1 PersAutoDict- DE: "@\x00\x00\x00\x00\x00\x00\x00"-
+#469918	NEW    cov: 311 ft: 461 corp: 115/10938b lim: 4096 exec/s: 9398 rss: 357Mb L: 100/248 MS: 1 ChangeBinInt-
+#471254	NEW    cov: 312 ft: 462 corp: 116/11038b lim: 4096 exec/s: 9425 rss: 357Mb L: 100/248 MS: 1 ChangeBit-
+	NEW_FUNC[1/1]: 0x615160 in BrotliBuildSimpleHuffmanTable /home/chase/Documents/Projects/woff/BROTLI/dec/huffman.c:268
+#472458	RELOAD cov: 387 ft: 562 corp: 130/12438b lim: 4096 exec/s: 9263 rss: 534Mb
+#473002	NEW    cov: 387 ft: 577 corp: 131/12538b lim: 4096 exec/s: 9274 rss: 534Mb L: 100/248 MS: 4 CopyPart-ChangeBit-ShuffleBytes-PersAutoDict- DE: "\x01\x00\x00\x00\x00\x00\x00\x04"-
+#474148	NEW    cov: 400 ft: 596 corp: 132/12638b lim: 4096 exec/s: 9297 rss: 534Mb L: 100/248 MS: 1 ChangeByte-
+#474334	NEW    cov: 400 ft: 599 corp: 133/12738b lim: 4096 exec/s: 9300 rss: 534Mb L: 100/248 MS: 1 CopyPart-
+#474926	NEW    cov: 412 ft: 613 corp: 134/12838b lim: 4096 exec/s: 9312 rss: 534Mb L: 100/248 MS: 2 ShuffleBytes-ChangeBinInt-
+#475052	NEW    cov: 414 ft: 638 corp: 135/12938b lim: 4096 exec/s: 9314 rss: 534Mb L: 100/248 MS: 1 ShuffleBytes-
+#477084	NEW    cov: 415 ft: 641 corp: 136/13038b lim: 4096 exec/s: 9354 rss: 534Mb L: 100/248 MS: 2 ShuffleBytes-ChangeASCIIInt-
+#477831	NEW    cov: 415 ft: 642 corp: 137/13138b lim: 4096 exec/s: 9369 rss: 534Mb L: 100/248 MS: 2 ChangeBit-ChangeBinInt-
+	NEW_FUNC[1/1]: 0x5e15e0 in SafeDecodeSymbol(HuffmanCode const*, BrotliBitReader*, unsigned int*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:311
+	NEW_FUNC[1/2]: 0x5d8f80 in ProcessCommands(BrotliStateStruct*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:1763
+	NEW_FUNC[2/2]: 0x5dcd00 in SafeProcessCommands(BrotliStateStruct*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:1767
+	NEW_FUNC[1/1]: 0x5e1a20 in InverseMoveToFrontTransform(unsigned char*, unsigned int, BrotliStateStruct*) /home/chase/Documents/Projects/woff/BROTLI/dec/decode.c:834
+	NEW_FUNC[1/3]: 0x663780 in std::_Rb_tree_iterator<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> > std::_Rb_tree<std::pair<unsigned int, unsigned int>, std::pair<std::pair<unsigned int, unsigned int> const, unsigned int>, std::_Select1st<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> >, std::less<std::pair<unsigned int, unsigned int> >, std::allocator<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> > >::_M_emplace_hint_unique<std::piecewise_construct_t const&, std::tuple<std::pair<unsigned int, unsigned int> const&>, std::tuple<> >(std::_Rb_tree_const_iterator<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> >, std::piecewise_construct_t const&, std::tuple<std::pair<unsigned int, unsigned int> const&>&&, std::tuple<>&&) /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h:2461
+	NEW_FUNC[2/3]: 0x663ab0 in std::_Rb_tree<std::pair<unsigned int, unsigned int>, std::pair<std::pair<unsigned int, unsigned int> const, unsigned int>, std::_Select1st<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> >, std::less<std::pair<unsigned int, unsigned int> >, std::allocator<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> > >::_M_get_insert_hint_unique_pos(std::_Rb_tree_const_iterator<std::pair<std::pair<unsigned int, unsigned int> const, unsigned int> >, std::pair<unsigned int, unsigned int> const&) /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_tree.h:2213
+#478108	RELOAD cov: 568 ft: 986 corp: 199/18Kb lim: 4096 exec/s: 9194 rss: 534Mb
+#478635	NEW    cov: 568 ft: 996 corp: 200/18Kb lim: 4096 exec/s: 9204 rss: 534Mb L: 100/248 MS: 2 ChangeBinInt-ChangeByte-
+#479377	NEW    cov: 568 ft: 997 corp: 201/19Kb lim: 4096 exec/s: 9218 rss: 534Mb L: 100/248 MS: 2 ShuffleBytes-ChangeBit-
+#479398	NEW    cov: 568 ft: 999 corp: 202/19Kb lim: 4096 exec/s: 9219 rss: 534Mb L: 100/248 MS: 1 PersAutoDict- DE: "@\x00\x00\x00\x00\x00\x00\x00"-
+#479819	NEW    cov: 569 ft: 1003 corp: 203/19Kb lim: 4096 exec/s: 9227 rss: 534Mb L: 100/248 MS: 1 PersAutoDict- DE: "wOF2"-
+#480010	NEW    cov: 569 ft: 1005 corp: 204/19Kb lim: 4096 exec/s: 9230 rss: 534Mb L: 100/248 MS: 1 ChangeByte-
+#480156	NEW    cov: 569 ft: 1006 corp: 205/19Kb lim: 4096 exec/s: 9233 rss: 534Mb L: 100/248 MS: 1 CopyPart-
+#480383	NEW    cov: 573 ft: 1013 corp: 206/19Kb lim: 4096 exec/s: 9238 rss: 534Mb L: 100/248 MS: 2 ChangeByte-CopyPart-
+#480659	NEW    cov: 573 ft: 1014 corp: 207/19Kb lim: 4096 exec/s: 9243 rss: 534Mb L: 100/248 MS: 1 ChangeBinInt-
+#481010	NEW    cov: 573 ft: 1016 corp: 208/19Kb lim: 4096 exec/s: 9250 rss: 534Mb L: 100/248 MS: 1 PersAutoDict- DE: "\x01\x00\x00\x00\x00\x00\x00\x04"-
+#481621	NEW    cov: 573 ft: 1018 corp: 209/19Kb lim: 4096 exec/s: 9261 rss: 534Mb L: 100/248 MS: 1 ChangeBinInt-
+#481649	NEW    cov: 574 ft: 1026 corp: 210/19Kb lim: 4096 exec/s: 9262 rss: 534Mb L: 100/248 MS: 3 ShuffleBytes-ShuffleBytes-ChangeByte-
+#482281	NEW    cov: 574 ft: 1028 corp: 211/20Kb lim: 4096 exec/s: 9274 rss: 534Mb L: 100/248 MS: 2 ShuffleBytes-ChangeByte-
+#482375	NEW    cov: 574 ft: 1029 corp: 212/20Kb lim: 4096 exec/s: 9276 rss: 534Mb L: 100/248 MS: 4 CMP-ShuffleBytes-ChangeBit-ChangeBit- DE: "\xff\xff\xc2\x87"-
+#482676	NEW    cov: 574 ft: 1031 corp: 213/20Kb lim: 4096 exec/s: 9282 rss: 534Mb L: 100/248 MS: 1 ChangeBinInt-
+#482864	RELOAD cov: 633 ft: 1239 corp: 269/25Kb lim: 4096 exec/s: 8941 rss: 637Mb
+#482890	NEW    cov: 633 ft: 1240 corp: 270/25Kb lim: 4096 exec/s: 8942 rss: 637Mb L: 100/248 MS: 1 CMP- DE: "\x08\x00"-
+#484661	NEW    cov: 633 ft: 1246 corp: 271/25Kb lim: 4096 exec/s: 8975 rss: 637Mb L: 100/248 MS: 1 CMP- DE: "\x00\x00\x00\x00\x00\x00\x00\x00"-
+#486852	NEW    cov: 633 ft: 1247 corp: 272/26Kb lim: 4096 exec/s: 9015 rss: 637Mb L: 100/248 MS: 1 ChangeBit-
+#487458	NEW    cov: 633 ft: 1248 corp: 273/26Kb lim: 4096 exec/s: 9027 rss: 637Mb L: 100/248 MS: 1 ChangeBinInt-
+#492371	NEW    cov: 633 ft: 1249 corp: 274/26Kb lim: 4096 exec/s: 9117 rss: 637Mb L: 100/248 MS: 3 ChangeByte-ChangeByte-ChangeBinInt-
+#492493	NEW    cov: 633 ft: 1250 corp: 275/26Kb lim: 4096 exec/s: 9120 rss: 637Mb L: 100/248 MS: 2 PersAutoDict-ChangeBinInt- DE: "wOF2"-
+#493950	NEW    cov: 633 ft: 1253 corp: 276/26Kb lim: 4096 exec/s: 9147 rss: 637Mb L: 100/248 MS: 2 ChangeBinInt-ChangeByte-
+#494411	NEW    cov: 633 ft: 1254 corp: 277/26Kb lim: 4096 exec/s: 9155 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#494661	RELOAD cov: 655 ft: 1338 corp: 311/29Kb lim: 4096 exec/s: 8993 rss: 637Mb
+#496738	NEW    cov: 664 ft: 1361 corp: 312/29Kb lim: 4096 exec/s: 9031 rss: 637Mb L: 100/248 MS: 2 ChangeBit-ChangeBit-
+#498245	NEW    cov: 664 ft: 1362 corp: 313/30Kb lim: 4096 exec/s: 9059 rss: 637Mb L: 100/248 MS: 2 ShuffleBytes-ChangeBinInt-
+#499411	NEW    cov: 664 ft: 1363 corp: 314/30Kb lim: 4096 exec/s: 9080 rss: 637Mb L: 100/248 MS: 1 ChangeBinInt-
+#500317	NEW    cov: 664 ft: 1364 corp: 315/30Kb lim: 4096 exec/s: 9096 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#501778	NEW    cov: 664 ft: 1366 corp: 316/30Kb lim: 4096 exec/s: 9123 rss: 637Mb L: 100/248 MS: 1 PersAutoDict- DE: "wOF2"-
+#502095	NEW    cov: 664 ft: 1367 corp: 317/30Kb lim: 4096 exec/s: 9129 rss: 637Mb L: 100/248 MS: 2 ChangeBit-ShuffleBytes-
+#502956	NEW    cov: 668 ft: 1389 corp: 318/30Kb lim: 4096 exec/s: 8981 rss: 637Mb L: 100/248 MS: 1 ChangeBinInt-
+#503337	NEW    cov: 668 ft: 1400 corp: 319/30Kb lim: 4096 exec/s: 8988 rss: 637Mb L: 100/248 MS: 1 ShuffleBytes-
+#505498	NEW    cov: 669 ft: 1407 corp: 320/30Kb lim: 4096 exec/s: 9026 rss: 637Mb L: 100/248 MS: 1 ShuffleBytes-
+#507269	RELOAD cov: 673 ft: 1453 corp: 340/32Kb lim: 4096 exec/s: 9058 rss: 637Mb
+#510431	NEW    cov: 673 ft: 1454 corp: 341/32Kb lim: 4096 exec/s: 9114 rss: 637Mb L: 100/248 MS: 2 ChangeBinInt-CMP- DE: "\x01\x00\x00\x00\x00\x00\x00\x00"-
+#512263	NEW    cov: 673 ft: 1455 corp: 342/32Kb lim: 4096 exec/s: 9147 rss: 637Mb L: 100/248 MS: 2 ChangeBit-CopyPart-
+#512399	NEW    cov: 673 ft: 1457 corp: 343/32Kb lim: 4096 exec/s: 9149 rss: 637Mb L: 100/248 MS: 1 CopyPart-
+#513730	NEW    cov: 673 ft: 1461 corp: 344/33Kb lim: 4096 exec/s: 9012 rss: 637Mb L: 100/248 MS: 1 ShuffleBytes-
+#514091	NEW    cov: 673 ft: 1463 corp: 345/33Kb lim: 4096 exec/s: 9019 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#517289	NEW    cov: 673 ft: 1464 corp: 346/33Kb lim: 4096 exec/s: 9075 rss: 637Mb L: 100/248 MS: 3 ChangeBit-ChangeBit-ChangeByte-
+#519138	NEW    cov: 673 ft: 1465 corp: 347/33Kb lim: 4096 exec/s: 9107 rss: 637Mb L: 100/248 MS: 4 CopyPart-ShuffleBytes-ChangeBinInt-ChangeBinInt-
+#519199	NEW    cov: 673 ft: 1466 corp: 348/33Kb lim: 4096 exec/s: 9108 rss: 637Mb L: 100/248 MS: 1 ChangeBit-
+#519288	NEW    cov: 673 ft: 1467 corp: 349/33Kb lim: 4096 exec/s: 9110 rss: 637Mb L: 100/248 MS: 4 ChangeByte-ChangeBinInt-ShuffleBytes-CMP- DE: "\x11\x00\x00\x00"-
+#522939	NEW    cov: 673 ft: 1471 corp: 350/33Kb lim: 4096 exec/s: 9174 rss: 637Mb L: 100/248 MS: 1 CMP- DE: "\x00\x00\x00\x00\x00\x00\x00d"-
+#524225	NEW    cov: 673 ft: 1474 corp: 351/33Kb lim: 4096 exec/s: 9196 rss: 637Mb L: 100/248 MS: 1 ChangeBinInt-
+#524288	pulse  cov: 673 ft: 1474 corp: 351/33Kb lim: 4096 exec/s: 9198 rss: 637Mb
+#524484	RELOAD cov: 675 ft: 1532 corp: 372/35Kb lim: 4096 exec/s: 9201 rss: 637Mb
+#524915	NEW    cov: 675 ft: 1533 corp: 373/35Kb lim: 4096 exec/s: 9209 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#526831	NEW    cov: 675 ft: 1534 corp: 374/35Kb lim: 4096 exec/s: 9242 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#526967	NEW    cov: 675 ft: 1536 corp: 375/36Kb lim: 4096 exec/s: 9245 rss: 637Mb L: 100/248 MS: 1 CopyPart-
+#531078	NEW    cov: 675 ft: 1537 corp: 376/36Kb lim: 4096 exec/s: 9156 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#533782	RELOAD cov: 688 ft: 1614 corp: 410/39Kb lim: 4096 exec/s: 9047 rss: 637Mb
+#542307	RELOAD cov: 694 ft: 1672 corp: 429/41Kb lim: 4096 exec/s: 9038 rss: 637Mb
+#544874	RELOAD cov: 702 ft: 1707 corp: 444/42Kb lim: 4096 exec/s: 8932 rss: 637Mb
+#551405	RELOAD cov: 704 ft: 1739 corp: 457/44Kb lim: 4096 exec/s: 8893 rss: 637Mb
+#554336	NEW    cov: 704 ft: 1740 corp: 458/44Kb lim: 4096 exec/s: 8798 rss: 637Mb L: 100/248 MS: 1 PersAutoDict- DE: "\x00\x00\x00\x00\x00\x00\x00\x00"-
+#555317	NEW    cov: 704 ft: 1745 corp: 459/44Kb lim: 4096 exec/s: 8814 rss: 637Mb L: 100/248 MS: 1 ChangeBit-
+#555694	NEW    cov: 705 ft: 1746 corp: 460/44Kb lim: 4096 exec/s: 8820 rss: 637Mb L: 100/248 MS: 2 ChangeASCIIInt-ChangeBit-
+#557480	NEW    cov: 705 ft: 1747 corp: 461/44Kb lim: 4096 exec/s: 8848 rss: 637Mb L: 100/248 MS: 1 ShuffleBytes-
+#559122	RELOAD cov: 710 ft: 1771 corp: 473/45Kb lim: 4096 exec/s: 8736 rss: 637Mb
+#561074	NEW    cov: 710 ft: 1775 corp: 474/45Kb lim: 4096 exec/s: 8766 rss: 637Mb L: 100/248 MS: 2 ShuffleBytes-ChangeBinInt-
+#561255	NEW    cov: 710 ft: 1776 corp: 475/45Kb lim: 4096 exec/s: 8769 rss: 637Mb L: 100/248 MS: 1 ChangeBinInt-
+#563856	NEW    cov: 710 ft: 1778 corp: 476/45Kb lim: 4096 exec/s: 8810 rss: 637Mb L: 100/248 MS: 1 ChangeByte-
+#564463	RELOAD cov: 724 ft: 1809 corp: 489/47Kb lim: 4096 exec/s: 8684 rss: 637Mb
+#566028	RELOAD cov: 741 ft: 1856 corp: 512/49Kb lim: 4096 exec/s: 8323 rss: 1830Mb
+#569764	NEW    cov: 741 ft: 1857 corp: 513/49Kb lim: 4096 exec/s: 8378 rss: 1830Mb L: 100/248 MS: 1 ChangeBit-
+#576560	NEW    cov: 741 ft: 1858 corp: 514/49Kb lim: 4096 exec/s: 8478 rss: 1830Mb L: 100/248 MS: 1 ChangeBit-
+#582376	NEW    cov: 741 ft: 1861 corp: 515/49Kb lim: 4096 exec/s: 8440 rss: 1830Mb L: 100/248 MS: 1 CopyPart-
+#585487	NEW    cov: 741 ft: 1862 corp: 516/49Kb lim: 4096 exec/s: 8485 rss: 1830Mb L: 100/248 MS: 1 ChangeByte-
+#587916	RELOAD cov: 747 ft: 1896 corp: 532/51Kb lim: 4096 exec/s: 8398 rss: 1830Mb
+#589722	NEW    cov: 748 ft: 1898 corp: 533/51Kb lim: 4096 exec/s: 8424 rss: 1830Mb L: 100/248 MS: 1 ChangeByte-
+#599620	RELOAD cov: 756 ft: 1937 corp: 549/53Kb lim: 4096 exec/s: 8328 rss: 1830Mb
+#602279	RELOAD cov: 759 ft: 1958 corp: 557/53Kb lim: 4096 exec/s: 8250 rss: 1830Mb
+#610218	RELOAD cov: 760 ft: 1980 corp: 561/54Kb lim: 4096 exec/s: 8246 rss: 1830Mb
+#613495	NEW    cov: 760 ft: 1981 corp: 562/54Kb lim: 4096 exec/s: 8290 rss: 1830Mb L: 100/248 MS: 2 ChangeBinInt-ChangeBinInt-
+#614596	NEW    cov: 761 ft: 1982 corp: 563/54Kb lim: 4096 exec/s: 8305 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#615872	NEW    cov: 761 ft: 1984 corp: 564/54Kb lim: 4096 exec/s: 8322 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#622228	NEW    cov: 761 ft: 1985 corp: 565/54Kb lim: 4096 exec/s: 8296 rss: 1830Mb L: 100/248 MS: 1 ChangeASCIIInt-
+	NEW_FUNC[1/1]: 0x5e8c60 in TransformDictionaryWord(unsigned char*, unsigned char const*, int, int) /home/chase/Documents/Projects/woff/BROTLI/dec/./transform.h:261
+#633833	RELOAD cov: 772 ft: 2005 corp: 573/55Kb lim: 4096 exec/s: 8451 rss: 1830Mb
+#635089	NEW    cov: 772 ft: 2007 corp: 574/55Kb lim: 4096 exec/s: 8467 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#635621	NEW    cov: 772 ft: 2010 corp: 575/55Kb lim: 4096 exec/s: 8474 rss: 1830Mb L: 100/248 MS: 2 ChangeASCIIInt-ChangeBinInt-
+#637713	NEW    cov: 772 ft: 2011 corp: 576/55Kb lim: 4096 exec/s: 8390 rss: 1830Mb L: 100/248 MS: 2 ChangeBinInt-ChangeBinInt-
+#638527	NEW    cov: 772 ft: 2012 corp: 577/55Kb lim: 4096 exec/s: 8401 rss: 1830Mb L: 100/248 MS: 4 ShuffleBytes-ChangeASCIIInt-ChangeBit-ChangeByte-
+#639818	NEW    cov: 772 ft: 2013 corp: 578/55Kb lim: 4096 exec/s: 8418 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#643907	RELOAD cov: 786 ft: 2027 corp: 579/55Kb lim: 4096 exec/s: 8472 rss: 1830Mb
+#647094	NEW    cov: 786 ft: 2028 corp: 580/56Kb lim: 4096 exec/s: 8403 rss: 1830Mb L: 100/248 MS: 2 ChangeBit-ChangeBinInt-
+#651000	NEW    cov: 786 ft: 2029 corp: 581/56Kb lim: 4096 exec/s: 8454 rss: 1830Mb L: 100/248 MS: 1 ChangeByte-
+#657760	RELOAD cov: 786 ft: 2037 corp: 584/56Kb lim: 4096 exec/s: 8542 rss: 1830Mb
+#665872	RELOAD cov: 790 ft: 2050 corp: 592/57Kb lim: 4096 exec/s: 8428 rss: 1830Mb
+#672634	NEW    cov: 790 ft: 2052 corp: 593/57Kb lim: 4096 exec/s: 8514 rss: 1830Mb L: 100/248 MS: 2 ChangeBinInt-ChangeByte-
+#674216	NEW    cov: 791 ft: 2053 corp: 594/57Kb lim: 4096 exec/s: 8534 rss: 1830Mb L: 100/248 MS: 2 ShuffleBytes-ChangeByte-
+#677287	NEW    cov: 792 ft: 2054 corp: 595/57Kb lim: 4096 exec/s: 8466 rss: 1830Mb L: 100/248 MS: 1 ChangeBinInt-
+#679145	RELOAD cov: 793 ft: 2058 corp: 597/57Kb lim: 4096 exec/s: 8489 rss: 1830Mb
+#682606	NEW    cov: 793 ft: 2059 corp: 598/57Kb lim: 4096 exec/s: 8532 rss: 1830Mb L: 100/248 MS: 1 ChangeBinInt-
+#685127	NEW    cov: 794 ft: 2060 corp: 599/57Kb lim: 4096 exec/s: 8564 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#686083	NEW    cov: 794 ft: 2061 corp: 600/58Kb lim: 4096 exec/s: 8576 rss: 1830Mb L: 100/248 MS: 1 CMP- DE: "K\x00\x00\x00\x00\x00\x00\x00"-
+#687024	NEW    cov: 794 ft: 2062 corp: 601/58Kb lim: 4096 exec/s: 8587 rss: 1830Mb L: 100/248 MS: 1 ShuffleBytes-
+#690590	NEW    cov: 795 ft: 2063 corp: 602/58Kb lim: 4096 exec/s: 8632 rss: 1830Mb L: 100/248 MS: 1 ChangeByte-
+#700349	RELOAD cov: 797 ft: 2069 corp: 606/58Kb lim: 4096 exec/s: 8646 rss: 1830Mb
+#701011	RELOAD cov: 799 ft: 2082 corp: 613/59Kb lim: 4096 exec/s: 8345 rss: 2059Mb
+==83745== ERROR: libFuzzer: out-of-memory (used: 2059Mb; limit: 2048Mb)
+   To change the out-of-memory limit use -rss_limit_mb=<N>
+
+Live Heap Allocations: 23885252 bytes in 3951 chunks; quarantined: 63247262 bytes in 10368 chunks; 95465 other chunks; total chunks: 109784; showing top 95% (at most 8 unique contexts)
+21499392 byte(s) (90%) in 13 allocation(s)
+    #0 0x522b2d in malloc /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/asan/asan_malloc_linux.cc:145:3
+    #1 0x435ce7 in operator new(unsigned long) (/home/chase/Documents/Projects/libFuzzerTutorial/woff/woff2-2016-05-06-fsanitize_fuzzer+0x435ce7)
+    #2 0x4768e2 in main /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerMain.cpp:19:10
+    #3 0x7e42c3e2a1c9  (/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+    #4 0x7e42c3e2a28a in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2a28a)
+    #5 0x421604 in _start (/home/chase/Documents/Projects/libFuzzerTutorial/woff/woff2-2016-05-06-fsanitize_fuzzer+0x421604)
+
+2014465 byte(s) (8%) in 1 allocation(s)
+    #0 0x55228d in operator new(unsigned long) /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/asan/asan_new_delete.cc:99:3
+    #1 0x65546c in allocate /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/new_allocator.h:151:27
+    #2 0x65546c in allocate /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/alloc_traits.h:482:20
+    #3 0x65546c in _M_allocate /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:381:20
+    #4 0x65546c in _M_create_storage /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:398:33
+    #5 0x65546c in _Vector_base /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:335:9
+    #6 0x65546c in vector /usr/lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/bits/stl_vector.h:557:9
+    #7 0x65546c in woff2::ConvertWOFF2ToTTF(unsigned char const*, unsigned long, woff2::WOFF2Out*) /home/chase/Documents/Projects/woff/SRC/src/woff2_dec.cc:1274:24
+    #8 0x66b901 in LLVMFuzzerTestOneInput /home/chase/Documents/Projects/woff/../FTS/woff2-2016-05-06/target.cc:13:3
+    #9 0x45ceb1 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:553:15
+    #10 0x45c6f5 in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool*) /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:469:3
+    #11 0x45e997 in fuzzer::Fuzzer::MutateAndTestOne() /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:695:19
+    #12 0x45f6b5 in fuzzer::Fuzzer::Loop(std::Fuzzer::vector<fuzzer::SizedFile, fuzzer::fuzzer_allocator<fuzzer::SizedFile> >&) /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerLoop.cpp:831:5
+    #13 0x44d478 in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerDriver.cpp:825:6
+    #14 0x4768e2 in main /local/mnt/workspace/bcain_clang_bcain-ubuntu_23113/llvm/utils/release/final/llvm.src/projects/compiler-rt/lib/fuzzer/FuzzerMain.cpp:19:10
+    #15 0x7e42c3e2a1c9  (/lib/x86_64-linux-gnu/libc.so.6+0x2a1c9)
+    #16 0x7e42c3e2a28a in __libc_start_main (/lib/x86_64-linux-gnu/libc.so.6+0x2a28a)
+    #17 0x421604 in _start (/home/chase/Documents/Projects/libFuzzerTutorial/woff/woff2-2016-05-06-fsanitize_fuzzer+0x421604)
+
+MS: 1 ShuffleBytes-; base unit: 22eccd43b57acf910c6c72a2a954b4e6b79aa01b
+0x77,0x4f,0x46,0x32,0x0,0x96,0x0,0x0,0x0,0x0,0x0,0x64,0x0,0x3,0x0,0x64,0xfa,0xf8,0x5a,0x0,0x0,0x0,0x0,0x2a,0xfa,0xfa,0xfa,0x1,0x0,0x0,0x0,0x0,0x0,0xfa,0xfa,0x1,0x0,0xfa,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x85,0xf1,0xfa,0x21,0xfa,0xfa,0x1,0xfa,0x1,0x0,0xfa,0x0,0x0,0xc,0x5e,0xbd,0x7a,0x41,0x0,0x0,0x3,0x0,0x64,0xfa,0xfc,0x5a,0x0,0x0,0x0,0x0,0x0,0x1,0x0,0x0,0x0,0xfa,0xb,0xfe,0xfe,0xff,0x0,0x0,0x0,0x1,0x0,0x0,0x1,0xd7,0x0,0x10,0x0,0x1,0x0,0xfa,0x0,
+wOF2\x00\x96\x00\x00\x00\x00\x00d\x00\x03\x00d\xfa\xf8Z\x00\x00\x00\x00*\xfa\xfa\xfa\x01\x00\x00\x00\x00\x00\xfa\xfa\x01\x00\xfa\x00\x00\x00\x00\x00\x00\x00\x85\xf1\xfa!\xfa\xfa\x01\xfa\x01\x00\xfa\x00\x00\x0c^\xbdzA\x00\x00\x03\x00d\xfa\xfcZ\x00\x00\x00\x00\x00\x01\x00\x00\x00\xfa\x0b\xfe\xfe\xff\x00\x00\x00\x01\x00\x00\x01\xd7\x00\x10\x00\x01\x00\xfa\x00
+artifact_prefix='./'; Test unit written to ./oom-68b1ff4c09bcce6eb0580bb8b9ff55014334f04b
+Base64: d09GMgCWAAAAAABkAAMAZPr4WgAAAAAq+vr6AQAAAAAA+voBAPoAAAAAAAAAhfH6Ifr6AfoBAPoAAAxevXpBAAADAGT6/FoAAAAAAAEAAAD6C/7+/wAAAAEAAAHXABAAAQD6AA==
+SUMMARY: libFuzzer: out-of-memory
